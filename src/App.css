@@ -1,0 +1,25 @@
+body {
+  background-color:#CEE0F2;
+}
+.main-number-container{
+  border:black 1px solid;
+
+  background-color: #FFFFFFFF;
+  color:black;
+
+  display:flex;
+  margin-left:400px;
+}
+.num{
+  border: black 1px solid;
+  width:100px;
+  height:150px;
+
+  text-align:center;
+  font-size:25px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.red{
+  color:red;
+  font-size:20px;
+}
