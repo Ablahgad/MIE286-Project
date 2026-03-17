@@ -20,6 +20,24 @@ function AtEnd() {
     const handleKeyPress = useCallback((event) => {
         const key = event.key;
 
+        if (key === "Backspace") {
+            setNumbers(prev => {
+                const index = prev.slice().reverse().findIndex(n => n !== "");
+                if (index === -1) return prev;
+
+                const realIndex = 9 - index;
+                const newArr = [...prev];
+                const newStyles = [...num_style];
+
+                newArr[realIndex] = "";
+                newStyles[realIndex] = {};
+
+                setNum_style(newStyles);
+                return newArr;
+            });
+            return;
+        }
+
         if (key === "Enter" && numbers[9] !== "") {
             console.log("Conditional passed");
 
@@ -51,7 +69,7 @@ function AtEnd() {
             return newArr;
         });  
 
-    }, [numbers, ans]);
+    }, [numbers, ans, num_style]);
 
     useEffect(() => {
         window.addEventListener('keydown', handleKeyPress);

@@ -6,7 +6,7 @@ import AtEnd from './at_end'
 function App() {
   return (
     <>
-    <Immediate></Immediate>
+    {/* <Immediate></Immediate> */}
     <AtEnd></AtEnd>
     </>
   )
