@@ -3,8 +3,8 @@ import { useState, useEffect, useCallback } from 'react'
 function Immediate() {
     const [numbers, setNumbers] = useState(Array(10).fill(""));
     const [num_style, setNum_style] = useState(Array(10).fill({}));
-    const ans = ["8", "1", "3", "4", "6", "5", "1", "0", "4", "5"] // Ans2
-    // const ans = ["5", "4", "0", "2", "7", "4", "5", "3", "1", "7"] // Ans3
+    //const ans = ["8", "1", "3", "4", "6", "5", "1", "0", "4", "5"] // Ans2
+    const ans = ["5", "4", "0", "2", "7", "4", "5", "3", "1", "7"] // Ans3
     // const ans = ["0", "2", "5", "9", "1", "7", "8", "8", "9", "6"] // Ans4
     // const ans = ["5", "9", "0", "8", "8", "7", "8", "8", "1", "8"] // Ans5
     // const ans = ["9", "5", "9", "5", "9", "7", "3", "5", "1", "3"] // Ans6
